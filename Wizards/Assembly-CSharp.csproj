@@ -57,6 +57,10 @@
   <ItemGroup>
      <Compile Include="Assets\MagicEffects\Script\ConGUI.cs" />
      <Compile Include="Assets\MagicEffects\Script\Lighting.cs" />
+     <Compile Include="Assets\Scrpits\CameraController.cs" />
+     <Compile Include="Assets\Scrpits\Destroy.cs" />
+     <Compile Include="Assets\Scrpits\EnemyHPSlider.cs" />
+     <Compile Include="Assets\Scrpits\MagicDamage.cs" />
      <Compile Include="Assets\Scrpits\MagicEmit.cs" />
      <None Include="Assets\StageTerrain\info.txt" />
      <None Include="Assets\MagicEffects\MagicEffectsPackFree\ReadMe.txt" />

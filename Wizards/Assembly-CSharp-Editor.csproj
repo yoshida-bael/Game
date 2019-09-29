@@ -55,20 +55,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\NatureStarterKit2\Editor\ImageEffects\AntialiasingEditor.cs" />
-     <Compile Include="Assets\NatureStarterKit2\Editor\ImageEffects\BloomAndFlaresEditor.cs" />
-     <Compile Include="Assets\NatureStarterKit2\Editor\ImageEffects\BloomEditor.cs" />
-     <Compile Include="Assets\NatureStarterKit2\Editor\ImageEffects\CameraMotionBlurEditor.cs" />
-     <Compile Include="Assets\NatureStarterKit2\Editor\ImageEffects\ColorCorrectionCurvesEditor.cs" />
-     <Compile Include="Assets\NatureStarterKit2\Editor\ImageEffects\ColorCorrectionLookupEditor.cs" />
-     <Compile Include="Assets\NatureStarterKit2\Editor\ImageEffects\CreaseShadingEditor.cs" />
-     <Compile Include="Assets\NatureStarterKit2\Editor\ImageEffects\DepthOfFieldDeprecatedEditor.cs" />
-     <Compile Include="Assets\NatureStarterKit2\Editor\ImageEffects\DepthOfFieldEditor.cs" />
-     <Compile Include="Assets\NatureStarterKit2\Editor\ImageEffects\EdgeDetectionEditor.cs" />
-     <Compile Include="Assets\NatureStarterKit2\Editor\ImageEffects\NoiseAndGrainEditor.cs" />
-     <Compile Include="Assets\NatureStarterKit2\Editor\ImageEffects\SunShaftsEditor.cs" />
-     <Compile Include="Assets\NatureStarterKit2\Editor\ImageEffects\TonemappingEditor.cs" />
-     <Compile Include="Assets\NatureStarterKit2\Editor\ImageEffects\VignetteAndChromaticAberrationEditor.cs" />
+     <Compile Include="Assets\AIBehavior\Editor\AIBehaviorsMadeEasy\AIBehaviorsAboutWindow.cs" />
+     <Compile Include="Assets\AIBehavior\Editor\AIBehaviorsMadeEasy\AIBehaviorsEditor.cs" />
+     <Compile Include="Assets\AIBehavior\Editor\AIBehaviorsMadeEasy\AIBehaviorsMenuItems.cs" />
+     <Compile Include="Assets\AIBehavior\Editor\AIBehaviorsMadeEasy\AnimationStatesEditor.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>/Users/yoshidaikuma/Game/Wizards/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
@@ -667,6 +657,14 @@
     <ProjectReference Include="Assembly-CSharp-Editor-firstpass.csproj">
       <Project>{4BFCEED5-60BD-DF84-7515-54288ADAE1D7}</Project>
       <Name>Assembly-CSharp-Editor-firstpass</Name>
+    </ProjectReference>
+    <ProjectReference Include="AIBehaviorNav_Editor.csproj">
+      <Project>{003FA5D1-75D5-071A-EE59-9558246F782F}</Project>
+      <Name>AIBehaviorNav_Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="AIBehavior.csproj">
+      <Project>{2EF8117B-2AA1-04AB-50F8-59A100C37F2B}</Project>
+      <Name>AIBehavior</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
