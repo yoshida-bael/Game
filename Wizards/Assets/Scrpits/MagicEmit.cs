@@ -20,6 +20,8 @@ public class MagicEmit : MonoBehaviour
 		if (Input.GetKey (KeyCode.Mouse0)) {
 			animator.SetBool("Magic1",true);
 			GameObject Magic = (GameObject)Instantiate (MagicPrefab, child.transform.position, Quaternion.Euler (child.transform.eulerAngles.x, child.transform.eulerAngles.y, 0));
-        }
+        }else{
+			animator.SetBool("Magic1",false);
+		}
 	}
 }

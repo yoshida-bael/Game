@@ -55,21 +55,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\MagicAnimations\Magic Pack\Demo\CameraScroll.cs" />
      <Compile Include="Assets\MagicEffects\Script\ConGUI.cs" />
      <Compile Include="Assets\MagicEffects\Script\Lighting.cs" />
-     <Compile Include="Assets\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
-     <Compile Include="Assets\SampleScenes\Menu\Scripts\PauseMenu.cs" />
-     <Compile Include="Assets\SampleScenes\Menu\Scripts\SceneAndURLLoader.cs" />
-     <Compile Include="Assets\SampleScenes\Scripts\CameraSwitch.cs" />
-     <Compile Include="Assets\SampleScenes\Scripts\LevelReset.cs" />
-     <Compile Include="Assets\SampleScenes\Scripts\ParticleSceneControls.cs" />
-     <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
-     <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
      <Compile Include="Assets\Scrpits\MagicEmit.cs" />
      <None Include="Assets\StageTerrain\info.txt" />
      <None Include="Assets\MagicEffects\MagicEffectsPackFree\ReadMe.txt" />
-     <None Include="Assets\SampleScenes\Shaders\Skybox-Procedural.shader" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>/Users/yoshidaikuma/Game/Wizards/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
