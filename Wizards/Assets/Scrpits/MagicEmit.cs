@@ -4,14 +4,22 @@ using UnityEngine;
 
 public class MagicEmit : MonoBehaviour
 {
-    public GameObject MagicPrefab;
+	public GameObject MagicPrefab;
 	public float shotSpeed;
+	private Animator animator;
+	private CharacterController characterController;
+	private GameObject child;
+
+	void Start (){
+		characterController = GetComponent<CharacterController>();
+		animator = GetComponent<Animator>();
+		child = this.transform.Find("MagicEmittion").gameObject;
+	}
 
 	void Update () {
 		if (Input.GetKey (KeyCode.Mouse0)) {
-			GameObject Magic = (GameObject)Instantiate (MagicPrefab, transform.position, Quaternion.Euler (transform.parent.eulerAngles.x, transform.parent.eulerAngles.y, 0));
-			Rigidbody MagicRb = Magic.GetComponent<Rigidbody> ();
-			MagicRb.AddForce (transform.forward * shotSpeed);
+			animator.SetBool("Magic1",true);
+			GameObject Magic = (GameObject)Instantiate (MagicPrefab, child.transform.position, Quaternion.Euler (child.transform.eulerAngles.x, child.transform.eulerAngles.y, 0));
         }
 	}
 }

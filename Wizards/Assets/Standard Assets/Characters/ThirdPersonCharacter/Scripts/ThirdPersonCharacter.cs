@@ -75,6 +75,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 			UpdateAnimator(move);
 		}
 
+
 		void ScaleCapsuleForCrouching(bool crouch)
 		{
 			if (m_IsGrounded && crouch)
