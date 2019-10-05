@@ -62,7 +62,6 @@
      <Compile Include="Assets\Scrpits\EnemyHPSlider.cs" />
      <Compile Include="Assets\Scrpits\MagicDamage.cs" />
      <Compile Include="Assets\Scrpits\MagicEmit.cs" />
-     <None Include="Assets\StageTerrain\info.txt" />
      <None Include="Assets\MagicEffects\MagicEffectsPackFree\ReadMe.txt" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>/Users/ikuma/Game/Wizards/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
