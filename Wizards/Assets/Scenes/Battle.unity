@@ -894,6 +894,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MagicPrefab: {fileID: 100002, guid: b2e1927a9cfbd4c03a114b0166c00dce, type: 3}
   shotSpeed: 100
+--- !u!114 &1864184085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1864184083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e0d44080ca654dd0a9180513a9beecd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  magics:
+  - {fileID: 0}
+  - {fileID: 0}
+  currentNum: 0
 --- !u!4 &1864184090 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 408730, guid: 7737647c22c1fc64a88d5cd030c352ce,
