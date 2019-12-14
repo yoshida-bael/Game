@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class MagicEmit : MonoBehaviour
 {
-	public GameObject MagicPrefab;
+
+	public GameObject[] MagicPrefabs;
 	public float shotSpeed;
+	public int currentNum = 0;
 	private Animator animator;
 	private CharacterController characterController;
 	private GameObject child;
@@ -14,14 +16,37 @@ public class MagicEmit : MonoBehaviour
 		characterController = GetComponent<CharacterController>();
 		animator = GetComponent<Animator>();
 		child = this.transform.Find("MagicEmittion").gameObject;
+
+		for(int i=0;i<MagicPrefabs.Length;i++){
+            if(i == currentNum){
+                //SetActiveでtrueになっているのが実際に使えるやつ
+                MagicPrefabs[i].SetActive(true);
+            }else{
+                MagicPrefabs[i].SetActive(false);
+            }
+        }
 	}
 
 	void Update () {
-		if (Input.GetKey (KeyCode.Mouse0)) {
+		if (Input.GetKey(KeyCode.Mouse0)) {
 			animator.SetBool("Magic1",true);
-			GameObject Magic = (GameObject)Instantiate (MagicPrefab, child.transform.position, Quaternion.Euler (child.transform.eulerAngles.x, child.transform.eulerAngles.y, 0));
         }else{
 			animator.SetBool("Magic1",false);
 		}
+	}
+
+	void MagicAttack(){
+		if(Input.GetKeyDown(KeyCode.p)){
+            currentNum=(currentNum+1)%MagicPrefabs.Length;
+
+            for(int i=0;i<magics.Length;i++){
+                if(i == currentNum){
+                    MagicPrefabs[i].SetActive(true);
+                }else{
+                    MagicPrefabs[i].SetActive(false);
+                }
+            }
+        }
+		GameObject Magic = (GameObject)Instantiate (MagicPrefabs[i], child.transform.position, Quaternion.Euler (child.transform.eulerAngles.x, child.transform.eulerAngles.y, 0));
 	}
 }
